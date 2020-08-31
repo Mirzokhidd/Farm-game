@@ -1,0 +1,110 @@
+<!--Image mapping
+By: Mirozkhid Ganiev 
+Age: 15
+Grade: 9C
+Date upon finishing: Monday, 31st August 2020
+Location upon finishing: Dubai, UAE
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animal Game</title>
+    </head>
+    <style>
+        body {
+                font-family:'Courier New';
+            }
+
+            p {
+                font-size: 30px;
+            }
+
+            button {
+                border: none;
+                background-color: green;
+                color: white;
+                padding: 10px;
+                border-radius: 10%; 
+            }
+    </style>
+    <body>
+        <audio id="cow"><source src="cow.mp3"></audio>
+        <audio id="pig"><source src="pig.mp3"></audio>
+        <audio id="horse"><source src="horse.mp3"></audio>
+        <audio id="rooster"><source src="rooster.mp3"></audio>
+        <audio id="chicken"><source src="chicken.mp3"></audio>
+        <audio id="chick"><source src="chick.mp3"></audio>
+        <audio id="sheep"><source src="sheep.mp3"></audio>
+        <audio id="goat"><source src="goat.mp3"></audio>
+        <audio id="cat"><source src="cat.mp3"></audio>
+        <audio id="dog"><source src="dog.mp3"></audio>
+        <audio id="duck"><source src="duck.mp3"></audio>
+        <p>Click on animals to learn their sound</p>  
+        <button onclick="cows(), pigs(), horses(), chickens(), roosters(), chickens(), chicks(), sheeps(), goats(), cats(), dogs(), ducks() ">All animals at one</button>  
+        <img src="farm.jpg" usemap="#farmmap"  style="position: absolute; top: 150px; left: 400px; border: 2px solid black;">
+        <map name="farmmap">
+            <area onclick="cows()" coords="27,196,51,311,107,309,131,275,117,236,98,198,80,187,40,180" shape="poly">
+            <area onclick="pigs()" coords="374,210,403,253,451,250,475,182,482,171,407,173" shape="poly">
+            <area onclick="horses()" coords="235,195,263,222,306,218,326,175,327,117,287,112" shape="poly">
+            <area onclick="horses()" coords="496,143,509,233,527,253,564,260,594,235,597,205,531,145" shape="poly">
+            <area onclick="chickens()" coords="375,328,349,332,313,361,318,402,347,417,390,399,386,383,383,367" shape="poly">
+            <area onclick="roosters()" coords="437,371,420,397,483,436,500,404,520,385,538,379,542,363,536,349,481,331,446,320,439,341,433,351" shape="poly">
+            <area onclick="chicks()" coords="389,349,405,381,416,383,431,370,424,358,411,346,396,339" shape="poly">
+            <area onclick="sheeps()" coords="460,304,485,340,525,337,547,307,523,271,495,242,466,243,454,260" shape="poly">
+            <area onclick="goats()" coords="152,279,171,317,211,314,229,286,234,226,187,223" shape="poly">
+            <area onclick="cats()" coords="100,158,118,218,171,215,187,176,133,149" shape="poly">
+            <area onclick="dogs()" coords="244,288,271,342,322,342,339,293,289,271,261,271" shape="poly">
+            <area onclick="ducks()" coords="11,400,20,421,47,410,50,376" shape="poly">
+            <area onclick="ducks()" coords="59,358,76,405,124,403,124,380,83,339,69,347" shape="poly">
+            <area onclick="ducks()" coords="203,413,252,393,208,330,194,335,195,395" shape="poly">
+        </map>
+        </map>
+
+        <script>
+            function cows() {
+                document.getElementById("cow").play()
+            };
+
+            function pigs() {
+                document.getElementById("pig").play()
+            };
+
+            function horses() {
+                document.getElementById("horse").play()
+            };
+
+            function chickens() {
+                document.getElementById("chicken").play()
+            };
+
+            function roosters() {
+                document.getElementById("rooster").play()
+            };
+
+            function chicks() {
+                document.getElementById("chick").play()
+            };
+
+            function sheeps() {
+                document.getElementById("sheep").play()
+            };
+
+            function goats() {
+                document.getElementById("goat").play()
+            };
+
+            function cats() {
+                document.getElementById("cat").play()
+            }
+
+            function dogs() {
+                document.getElementById("dog").play()
+            }
+
+            function ducks() {
+                document.getElementById("duck").play()
+            }
+        </script>
+    </body>
+</html>
